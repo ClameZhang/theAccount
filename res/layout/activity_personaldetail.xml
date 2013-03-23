@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iv_personalicon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/pd_tv_balance"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/pd_tv_balance_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/pd_tv_nickname"
+        android:layout_alignTop="@+id/pd_tv_balance"
+        android:text="TextView"
+        android:textSize="@dimen/personaldetail_size_detailtitle"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/pd_tv_monthlyexpense_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pd_tv_balance_value"
+        android:layout_alignTop="@+id/pd_tv_monthlyexpense"
+        android:text="TextView"
+        android:textSize="@dimen/personaldetail_size_detailtitle"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/pd_tv_totalexpense_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pd_tv_monthlyexpense_value"
+        android:layout_alignTop="@+id/pd_tv_totalexpense"
+        android:text="TextView"
+        android:textSize="@dimen/personaldetail_size_detailtitle"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/pd_tv_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/iv_personalicon"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/personaldetail_balance"
+        android:textSize="@dimen/personaldetail_size_detailtitle"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pd_tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_personalicon"
+        android:layout_alignRight="@+id/pd_tv_name"
+        android:layout_marginBottom="14dp"
+        android:text="TextView"
+        android:textSize="@dimen/personaldetail_size_nickname" />
+
+    <TextView
+        android:id="@+id/pd_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/iv_personalicon"
+        android:layout_marginRight="25dp"
+        android:text="TextView"
+        android:textSize="@dimen/personaldetail_size_name"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pd_tv_monthlyexpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pd_tv_balance"
+        android:layout_below="@+id/pd_tv_balance"
+        android:layout_marginTop="50dp"
+        android:text="@string/personaldetail_monthlyexpense"
+        android:textSize="@dimen/personaldetail_size_detailtitle"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pd_tv_totalexpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pd_tv_monthlyexpense"
+        android:layout_below="@+id/pd_tv_monthlyexpense"
+        android:layout_marginTop="46dp"
+        android:text="@string/personaldetail_totalepense"
+        android:textSize="@dimen/personaldetail_size_detailtitle"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/pd_btn_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pd_tv_totalexpense"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="17dp"
+        android:text="@string/personaldetail_editpersonal" />
+
+    <TextView
+        android:id="@+id/pd_tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pd_tv_nickname"
+        android:layout_toLeftOf="@+id/pd_tv_balance_value"
+        android:text="1"
+        android:textSize="@dimen/personaldetail_size_nickname"
+        android:visibility="invisible" />
+
+</RelativeLayout>

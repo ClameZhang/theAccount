@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iv_edit_personal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp" />
+
+    <EditText
+        android:id="@+id/et_edit_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_edit_name"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/tv_edit_name"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/personaldetail_size_detailtitle" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_edit_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_edit_nickname"
+        android:layout_alignLeft="@+id/et_edit_name"
+        android:ems="10"
+        android:textSize="@dimen/personaldetail_size_detailtitle" />
+
+    <TextView
+        android:id="@+id/tv_edit_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_edit_name"
+        android:layout_marginTop="66dp"
+        android:layout_toLeftOf="@+id/et_edit_name"
+        android:text="@string/personaledit_nickname"
+        android:textSize="@dimen/personaldetail_size_detailtitle"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_edit_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_edit_nickname"
+        android:layout_below="@+id/et_edit_nickname"
+        android:layout_marginTop="58dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:textSize="@dimen/personaldetail_size_detailtitle" />
+
+    <TextView
+        android:id="@+id/tv_edit_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/et_edit_tel"
+        android:layout_toLeftOf="@+id/et_edit_name"
+        android:text="@string/personaledit_tel"
+        android:textSize="@dimen/personaldetail_size_detailtitle"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_edit_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/iv_edit_personal"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/personaledit_name"
+        android:textSize="@dimen/personaldetail_size_detailtitle"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_edit_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_edit_tel"
+        android:layout_below="@+id/et_edit_tel"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/personaledit_save"
+        android:textSize="@dimen/personaldetail_size_detailtitle"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_edit_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_edit_save"
+        android:layout_alignBottom="@+id/btn_edit_save"
+        android:layout_marginLeft="55dp"
+        android:layout_toRightOf="@+id/btn_edit_save"
+        android:text="@string/personaledit_cancle"
+        android:textSize="@dimen/personaldetail_size_detailtitle"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_edit_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tv_edit_name"
+        android:layout_alignTop="@+id/iv_edit_personal"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+</RelativeLayout>

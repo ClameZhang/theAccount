@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OB账本</string>
+    <string name="action_settings">Settings</string>
+    <string name="personaldetail_balance">余额</string>
+    <string name="personaldetail_monthlyexpense">月度开销</string>
+    <string name="personaldetail_totalepense">总花销</string>
+    <string name="personaldetail_editpersonal">编辑个人信息</string><string name="personaledit_name">姓名</string>
+    <string name="personaledit_nickname">绰号</string>
+    <string name="personaledit_tel">电话</string>
+    
+    <string name="personaledit_save">保 存</string>
+    <string name="personaledit_cancle">取 消</string>
+    <string name="homepage_menu_addnew">添加新成员</string>
+    <string name="homepage_menu_exit">退出程序</string>
+    <string name="homepage_dialog_title">提示</string>
+    <string name="homepage_dialog_exit">确定</string>
+    <string name="homepage_dialog_cancle">取消</string>
+    <string name="homepage_dialog_message">是否确认退出</string>
+    <string name="mainactivity_btn_list">一览</string>
+    <string name="mainactivity_btn_user">用户</string>
+    <string name="mainactivity_btn_account">账目</string>
+    <string name="menu_btn_list">一览</string>
+    <string name="menu_btn_expensedetail">开销明细</string>
+    <string name="menu_btn_user">用户管理</string>
+
+</resources>
